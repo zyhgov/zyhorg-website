@@ -311,13 +311,13 @@ const SkillsVisualization = () => {
           className="text-center mb-16"
         >
           <h2 className="text-sm lg:text-base font-bold text-apple-gray4 uppercase tracking-wider mb-4">
-            Skills & Expertise
+            不是什么都会，只是都会一点点。
           </h2>
           <p className="text-4xl lg:text-5xl font-bold text-apple-dark1 mb-6">
             新新技术不断发展 <br /> 学习不断学习
           </p>
           <p className="text-lg lg:text-xl text-apple-gray4 max-w-2xl mx-auto">
-            大数据技术专业背景，全栈开发能力，涵盖系统运维、数据工程和应用开发
+            git commit -m "fix all bugs"
           </p>
         </motion.div>
 

@@ -79,13 +79,13 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-sm lg:text-base font-bold text-apple-gray4 uppercase tracking-wider mb-4">
-            Get in Touch
+            不如，一起聊聊？
           </h2>
           <p className="text-4xl lg:text-5xl font-bold text-apple-dark1 mb-6">
-            与我交流联系
+            好点子，正在路上。
           </p>
           <p className="text-lg lg:text-xl text-apple-gray4 max-w-2xl mx-auto">
-            期待与你交流技术、分享经验、探讨合作
+            交流本身就是生产力
           </p>
         </motion.div>
 

@@ -67,7 +67,7 @@ const PartnersSection = () => {
             合作伙伴
           </h2>
           <p className="text-3xl lg:text-4xl font-bold text-apple-dark1">
-            因为信任所以氪金💸
+            跟懂行的人，玩真的。
           </p>
         </motion.div>
       </div>

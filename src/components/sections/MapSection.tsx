@@ -30,7 +30,7 @@ const MapSection = () => {
             我的行踪足迹
           </p>
           <p className="text-lg lg:text-xl text-apple-gray4 max-w-2xl mx-auto">
-            记录每一次旅行，见证每一段成长
+            行走，即是证明
           </p>
         </motion.div>
 

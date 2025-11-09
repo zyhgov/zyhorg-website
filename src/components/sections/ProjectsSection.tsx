@@ -30,14 +30,14 @@ const ProjectsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-sm lg:text-base font-bold text-apple-gray4 uppercase tracking-wider mb-4">
-            Projects
+            来点更硬的。
           </h2>
           <p className="text-4xl lg:text-5xl font-bold text-apple-dark1 mb-6">
             献丑了🤡 <br />
             一些项目作品
           </p>
           <p className="text-lg lg:text-xl text-apple-gray4 max-w-2xl mx-auto">
-            展示我参与或主导的一些学习项目
+            看我闲着无聊的时候都搞过些什么东西
           </p>
         </motion.div>
 
