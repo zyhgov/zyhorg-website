@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX, HiChevronDown, HiExternalLink } from 'react-icons/hi';
 import { navigationItems } from '@/data/config';
 import type { NavItem } from '@/types';
-
-const logoPath = '/src/assets/logo.svg';
+import logo from '@/assets/logo.svg';
+const logoPath = logo;
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

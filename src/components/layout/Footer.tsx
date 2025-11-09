@@ -15,10 +15,16 @@ import {
   SiCsdn
 } from 'react-icons/si';
 
-const logoPath = '/src/assets/logo.svg';
-const icpPath = '/src/assets/icp.png';
-const gaPath = '/src/assets/gonganbeian.png';
 
+import logo from '@/assets/logo.svg'; // 导入 Logo
+import icp from '@/assets/icp.png';   // 导入 ICP 备案图标
+import ga from '@/assets/gonganbeian.png'; // 导入 公安备案图标
+
+// 使用导入的变量（Vite 会提供正确的 URL 字符串）
+const logoPath = logo;
+const icpPath = icp;
+const gaPath = ga; 
+// ------------------------------------
 
 // 弹窗内容数据
 const modalContents = {
