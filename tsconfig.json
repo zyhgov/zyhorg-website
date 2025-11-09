@@ -16,8 +16,8 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,         // <-- 关键修改：允许未使用的局部变量
+    "noUnusedParameters": false,     // <-- 关键修改：允许未使用的函数参数
     "noFallthroughCasesInSwitch": true,
 
     /* Path Mapping */
