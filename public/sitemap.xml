@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- 首页 -->
+  <url>
+    <loc>https://zyhorg.cn/</loc>
+    <lastmod>2024-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 关于我 -->
+  <url>
+    <loc>https://zyhorg.cn/#about</loc>
+    <lastmod>2025-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 项目作品 -->
+  <url>
+    <loc>https://zyhorg.cn/#projects</loc>
+    <lastmod>2024-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 技能专长 -->
+  <url>
+    <loc>https://zyhorg.cn/#skills-visualization</loc>
+    <lastmod>2024-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 我的足迹 -->
+  <url>
+    <loc>https://zyhorg.cn/#footprint</loc>
+    <lastmod>2024-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 联系我 -->
+  <url>
+    <loc>https://zyhorg.cn/#contact</loc>
+    <lastmod>2024-01-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

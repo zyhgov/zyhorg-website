@@ -1,0 +1,224 @@
+@import './styles/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply font-openai bg-apple-gray1 text-apple-dark1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-color: #f5f5f7;
+  }
+  
+  /* 标题字体优化 */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+    letter-spacing: -0.02em;
+  }
+  
+  /* 段落优化 */
+  p {
+    @apply font-normal;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  /* 导航栏激活状态（滚动或菜单打开时）*/
+  .glass-nav-active {
+    background: linear-gradient(
+      to bottom,
+      rgba(245, 245, 247, 0.85) 0%,
+      rgba(245, 245, 247, 0.95) 100%
+    );
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  /* 滚动后的导航栏玻璃效果（保持原有） */
+  .glass-nav-scrolled {
+    background: linear-gradient(
+      to bottom,
+      rgba(245, 245, 247, 0.8) 0%,
+      rgba(245, 245, 247, 0.95) 100%
+    );
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  /* 下拉菜单激活状态（深色背景，高对比度）*/
+  .glass-dropdown-active {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(245, 245, 247, 0.98) 100%
+    );
+    backdrop-filter: saturate(180%) blur(30px);
+    -webkit-backdrop-filter: saturate(180%) blur(30px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  
+  /* 滚动时的全宽下拉菜单 - 白色背景 */
+  .glass-dropdown-full-scrolled {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(245, 245, 247, 0.98) 100%
+    );
+    backdrop-filter: saturate(180%) blur(30px);
+    -webkit-backdrop-filter: saturate(180%) blur(30px);
+  }
+  
+  /* 顶部透明时的全宽下拉菜单 - 半透明玻璃效果（已废弃，使用 glass-dropdown-active）*/
+  .glass-dropdown-full-transparent {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(245, 245, 247, 0.9) 100%
+    );
+    backdrop-filter: saturate(180%) blur(40px);
+    -webkit-backdrop-filter: saturate(180%) blur(40px);
+  }
+  
+  /* 下拉菜单玻璃效果 */
+  .glass-dropdown {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  /* Apple风格玻璃效果 */
+  .glass-effect {
+    @apply bg-white/70 backdrop-blur-apple;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  
+  /* 微妙阴影 */
+  .apple-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 
+                0 0 1px rgba(0, 0, 0, 0.05);
+  }
+  
+  .apple-shadow-lg {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 
+                0 10px 20px rgba(0, 0, 0, 0.06),
+                0 0 1px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* 容器 */
+  .container-apple {
+    @apply max-w-[980px] mx-auto px-6 lg:max-w-[1280px];
+  }
+  
+  /* Apple风格按钮 */
+  .btn-apple-primary {
+    @apply bg-apple-blue text-white px-6 py-3 rounded-full font-semibold;
+    @apply hover:bg-[#0077ED] transition-all duration-300;
+    @apply apple-shadow;
+    letter-spacing: -0.01em;
+  }
+  
+  .btn-apple-secondary {
+    @apply border-2 border-apple-blue text-apple-blue px-6 py-3 rounded-full font-semibold;
+    @apply hover:bg-apple-blue hover:text-white transition-all duration-300;
+    letter-spacing: -0.01em;
+  }
+  
+  /* Modal 内容样式 */
+  .modal-content h3 {
+    @apply text-xl font-bold text-apple-dark1 mt-6 mb-4 first:mt-0;
+  }
+
+  .modal-content p {
+    @apply text-apple-gray4 mb-4 leading-relaxed;
+  }
+
+  .modal-content ul {
+    @apply list-disc list-inside mb-4 space-y-2 text-apple-gray4;
+  }
+
+  .modal-content ul li {
+    @apply pl-2;
+  }
+
+  .modal-content strong {
+    @apply text-apple-dark1 font-semibold;
+  }
+
+  .modal-content a {
+    @apply text-apple-blue hover:underline;
+  }
+
+  .modal-content .text-muted {
+    @apply text-apple-gray4 text-xs italic mt-6;
+  }
+
+  /* 滚动条样式 */
+  .modal-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    background: #f5f5f7;
+    border-radius: 3px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background: #86868b;
+    border-radius: 3px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: #0071e3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* 技能条闪光动画 */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.shimmer-effect {
+  animation: shimmer 2s infinite;
+}
+
+
+/* iframe 平滑加载 */
+/* iframe {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+iframe[data-loaded="true"] {
+  opacity: 1;
+} */
+
+/* 防止 iframe 内容溢出 */
+/* .map-container {
+  isolation: isolate;
+} */

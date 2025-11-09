@@ -1,0 +1,30 @@
+{
+  "name": "联合库 UNHub - 杖雍皓官网",
+  "short_name": "UNHub",
+  "description": "杖雍皓的个人技术品牌，专注于大数据、全栈开发和云计算",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#0071e3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["technology", "development", "education"],
+  "lang": "zh-CN",
+  "dir": "ltr"
+}
