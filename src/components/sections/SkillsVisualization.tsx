@@ -331,11 +331,13 @@ const SkillsVisualization = () => {
             className="bg-apple-gray1 rounded-3xl p-8 lg:p-10 apple-shadow"
           >
             <h3 className="text-2xl font-bold text-apple-dark1 mb-6">技术领域能力</h3>
-            <ReactECharts
+              {isInView && (
+             <ReactECharts
               option={polarBarOption}
               style={{ height: '400px' }}
               opts={{ renderer: 'svg' }}
-            />
+             />
+                  )}
           </motion.div>
 
           {/* 饼图 */}
@@ -346,11 +348,13 @@ const SkillsVisualization = () => {
             className="bg-apple-gray1 rounded-3xl p-8 lg:p-10 apple-shadow"
           >
             <h3 className="text-2xl font-bold text-apple-dark1 mb-6">技能熟练度分布</h3>
-            <ReactECharts
-              option={pieOption}
-              style={{ height: '400px' }}
-              opts={{ renderer: 'svg' }}
-            />
+          {isInView && (
+                <ReactECharts
+                  option={pieOption}
+                  style={{ height: '400px' }}
+                  opts={{ renderer: 'svg' }}
+                />
+            )}
             <div className="mt-6 space-y-2 text-sm text-apple-gray4">
               <p>• 精通：能够独立设计和实现复杂系统</p>
               <p>• 熟练：能够高效完成开发任务</p>
