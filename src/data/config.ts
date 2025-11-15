@@ -91,34 +91,26 @@ export const navigationItems: NavItem[] = [
 export const carouselSlides: CarouselSlide[] = [
   {
     id: 1,
-    image: getAssetUrl('/src/assets/images/carousel/oberon-copeland-veryinformed-com-EtCxIuaG-zU-unsplash.jpg'),
-    title: '无需代理的中文维基百科',
-    subtitle: 'wikipedia',
-    description: '通过 Cloudflare Workers 实现中国大陆网络环境直接访问。',
-    buttons: [
-      {
-        text: '立即访问',
-        href: 'https://wikipedia.zyhorg.cn',
-        type: 'primary',
-        external: true,
-      },
-      {
-        text: '了解技术实现',
-        href: '#projects',
-        type: 'secondary',
-      },
-    ],
+    image: getAssetUrl('https://cf-r2.zyhorg.ac.cn/videos/1763172353411-n04rga-byT3XAs3vG6Ktm4k.mp4'),
+    mediaType: 'video',
+    title: '名探偵コナン 2026🪽',
+    subtitle: '名侦探柯南 2026🪽',
+    description: '名侦探柯南2026年新剧场版预告片。',
+    duration: 40000, // 视频 40 秒（也可以不设置，会自动获取视频时长）
+    buttons: [],
   },
   {
     id: 2,
-    image: getAssetUrl('/src/assets/images/carousel/gta6.jpg'),
-    title: 'Grand Theft Auto VI',
-    subtitle: 'GTA VI',
-    description: '《侠盗猎车手 VI》现已定于 2026 年 11 月 19 日星期四发布。',
+    image: getAssetUrl('https://cf-r2.zyhorg.ac.cn/images/1763171641668-6zzcc5-ai.jpg'),
+    mediaType: 'image',
+    title: '全球范围内主流的 AI',
+    subtitle: 'AI Models',
+    description: '系统梳理了当前全球范围内主流的 AI/大语言模型（LLM）、核心提供商及其代表性应用，涵盖开源与闭源模型、企业与研究机构、工具平台与终端产品。',
+    duration: 5000, // 图片显示 5 秒
     buttons: [
       {
         text: '了解更多',
-        href: 'https://www.rockstargames.com/VI',
+        href: 'https://docs.zyhorg.cn/docs/All-AILLM-models',
         type: 'secondary',
         external: true,
       },
@@ -126,10 +118,12 @@ export const carouselSlides: CarouselSlide[] = [
   },
   {
     id: 3,
-    image: getAssetUrl('/src/assets/images/carousel/451898.jpg'),
+    image: getAssetUrl('https://cf-r2.zyhorg.ac.cn/images/1762948577753-mdc23h-Sequoia-Sunrise.jpg'),
+    mediaType: 'image',
     title: 'Apple Wallpapers',
     subtitle: 'Apple Wallpapers',
     description: '精选自 Apple 官方的高质量壁纸合集，适用于各种设备。',
+    duration: 5000, // 图片显示 5 秒
     buttons: [
       {
         text: '了解更多',
@@ -145,14 +139,37 @@ export const carouselSlides: CarouselSlide[] = [
       },
     ],
   },
+  // 新增：视频背景示例
+  {
+    id: 4,
+    image: getAssetUrl('https://cf-r2.zyhorg.ac.cn/images/1763173374520-gpmkaq-wiki.jpg'),
+    mediaType: 'image',
+    title: '无需代理的中文维基百科',
+    subtitle: 'wikipedia',
+    description: '通过 Cloudflare Workers 实现中国大陆网络环境直接访问。',
+    duration: 5000, // 图片显示 5 秒
+    buttons: [
+      {
+        text: '立即访问',
+        href: 'https://wikipedia.zyhorg.cn',
+        type: 'primary',
+        external: true,
+      },
+      {
+        text: '了解技术实现',
+        href: '#projects',
+        type: 'secondary',
+      },
+    ],
+  },
 ];
 
 // 个人信息配置
 export const personalInfo: PersonalInfo = {
   name: '杖雍皓 · 张永豪',
   title: '计算机领域的永远学习者',
-  bio: '热爱技术，专注于创造优秀的数字产品。擅长前端开发、Linux发行版操作系统、用户体验设计和产品规划。追求代码的优雅与产品的极致。',
-  bio2: '从2025年伊始在中国软件与技术服务股份有限公司实习工作。',
+  bio: '热爱技术，专注于创造优秀的数字产品。擅长Python开发、前端开发、Linux发行版操作系统、用户体验设计和产品规划。追求代码的优雅与产品的极致。',
+  bio2: '从2025年开始在中国软件与技术服务股份有限公司实习工作。从事湖北省税务系统核心征管的运维工作，积累了丰富的实战经验。',
   avatar: getAssetUrl('/src/assets/images/avatar.jpg'),
   skills: [
     { name: 'React', icon: getAssetUrl('/src/assets/images/skills/React.svg'), category: 'frontend' },

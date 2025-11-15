@@ -24,10 +24,12 @@ export interface CarouselButton {
 export interface CarouselSlide {
   id: number;
   image: string;
+  mediaType?: 'image' | 'video';
   title: string;
   subtitle: string;
   description: string;
   buttons?: CarouselButton[]; // 可选的按钮数组
+  duration?: number; // 可选：自定义显示时长（毫秒），如果不设置则使用默认值或视频时长
 }
 
 export interface Skill {
