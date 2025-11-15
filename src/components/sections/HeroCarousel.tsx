@@ -288,11 +288,11 @@ const HeroCarousel = () => {
           // 视频背景
           <>
             <video
-              ref={(el) => (videoRefs.current[index] = el)}
+              ref={(el) => { videoRefs.current[index] = el; }}
               className="absolute inset-0 w-full h-full object-cover"
               src={slide.image}
               muted
-              loop={false} // 不循环，播放完自动切换
+              loop={false}
               playsInline
               preload="auto"
               onLoadedMetadata={(e) => handleVideoLoaded(index, e.currentTarget)}
