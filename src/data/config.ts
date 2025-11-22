@@ -91,12 +91,12 @@ export const navigationItems: NavItem[] = [
 export const carouselSlides: CarouselSlide[] = [
   {
     id: 1,
-    image: getAssetUrl('https://cf-r2.zyhorg.ac.cn/videos/1763172353411-n04rga-byT3XAs3vG6Ktm4k.mp4'),
+    image: getAssetUrl('https://videos.rockstargames.com/v4/r9o6cres/flv/zh-hans-1080p.mp4'),
     mediaType: 'video',
-    title: '名探偵コナン 2026🪽',
-    subtitle: '名侦探柯南 2026🪽',
-    description: '名侦探柯南2026年新剧场版预告片。',
-    duration: 40000, // 视频 40 秒（也可以不设置，会自动获取视频时长）
+    title: '',
+    subtitle: '',
+    description: '',
+    duration: 20000, // 视频 40 秒（也可以不设置，会自动获取视频时长）
     buttons: [],
   },
   {
